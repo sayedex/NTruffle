@@ -1,0 +1,122 @@
+.Popup {
+    height: 100%;
+    position: fixed;
+    background-color: rgba(40, 13, 95, 0.6);
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+.pop_Main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 457px;
+    align-items: center;
+    border-radius: 45px;
+    animation: fadeInDown 0.59s;
+}
+.popup-header {
+    background: #eef4fe;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 38px 38px 0px 0px;
+}
+.popup-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #342e2e;
+}
+.popup-header h3{
+    font-family: 'Poppins', sans-serif;
+}
+.popup-header p{
+    font-family: 'Poppins', sans-serif;
+}
+.Buy_token {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    background: #1273ea;
+    color: white;
+    outline: none;
+    border: initial;
+    width: 86%;
+    padding: 13px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 11px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #090909 0%, #e8a001 100%);
+}
+.Buy_token:hover{
+    background-image: linear-gradient(to right, #000000 0%, #ffb104 100%);
+}
+.Close_ {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background: #1273ea00;
+    color: #ff9800;
+    outline: none;
+    width: 86%;
+    padding: 13px 30px;
+    font-size: 16px;
+    border-radius: 11px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px silid white;
+    border: 1.px solid red;
+    border-color: #37370a00;
+    font-weight: 500;
+}
+.content {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+}
+.content h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: red;
+}
+.content p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+.Btn_ {
+    text-align: center;
+    line-height: 4rem;
+}
+.BN{
+    line-height: 1rem;  
+}
+#hidepopup{
+    display: none;
+}
+#showpopup{
+    display: block;
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      top: 0%;
+    }
+    100% {
+      opacity: 1;
+      top: 50%;
+    }
+  }
+
+/* some responsiveness */
+@media(max-width:550px){
+    .pop_Main {
+        width: 85% !important;
+       
+    }
+}
+
+
